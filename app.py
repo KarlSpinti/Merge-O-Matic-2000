@@ -416,9 +416,6 @@ if file_data:
         output = BytesIO()
         wb.save(output)
         output.seek(0)
-
-        final_path = os.path.join(os.getcwd(), "Analysis.xlsx")
-        wb.save(final_path)
         wb.close()
 
         st.success("✅ Combined file created!")
